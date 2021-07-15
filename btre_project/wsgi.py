@@ -12,6 +12,6 @@ import os
 from django.core.wsgi import get_wsgi_application
 
 #os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'btreproj.settings')
-os.environ["DJANGO_SETTINGS_MODULE"] = "btreproj.settings"
+os.environ["DJANGO_SETTINGS_MODULE"] = "btre_project.settings"
 
 application = get_wsgi_application()
