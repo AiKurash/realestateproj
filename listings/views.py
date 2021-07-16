@@ -12,6 +12,7 @@ def index(request):
     paged_listings = paginator.get_page(page)
 
     context = {
+        'listing': listing,
         'listings': paged_listings
     }
     return render(request, 'listings/listings.html', context)
