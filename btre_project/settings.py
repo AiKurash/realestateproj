@@ -162,8 +162,4 @@ MESSAGE_TAGS = {
 
 django_heroku.settings(locals())
 
-#Email Config
-##EMAIL_PORT = 587
-#EMAIL_HOST_USER='bewater475@gmail.com'
-#EMAIL_HOST_PASSWORD='Akira2020!'
-#EMAIL_USE_TLS=True
+
