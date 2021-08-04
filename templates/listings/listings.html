@@ -13,7 +13,7 @@
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
             <a href="{% url 'index' %}">
-              <i class="fas fa-home"></i>Home Page is Here</a>
+              <i class="fas fa-home"></i>Welcome to BTRE Realestate</a>
           </li>
           <li class="breadcrumb-item active"> Browse Listings</li>
         </ol>
@@ -28,8 +28,11 @@
         {% if listings %}
           {% for listing in listings %}
           <div class="col-md-6 col-lg-4 mb-4">
+
             <div class="card listing-preview">
+              <a href="{{ listing.photo_main.url }}" data-lightbox="home-images"><
               <img class="card-img-top" src="{{ listing.photo_main.url }}" alt="">
+              </a>
               <div class="card-img-overlay">
                 <h2>
                   <span class="badge badge-secondary text-white">${{ listing.price }}</span>
